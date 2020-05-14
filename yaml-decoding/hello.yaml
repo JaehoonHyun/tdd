@@ -1,0 +1,23 @@
+apiVersion: kubeadm.k8s.io/v1beta2
+kind: ClusterConfiguration
+etcd:
+  local:
+    dataDir: /var/lib/etcd
+kubernetesVersion: v1.14.0
+networking:
+  - dnsDomain: cluster.local
+    serviceSubnet: fd03::/112
+    podSubnet: fd04::/112
+apiServer:
+  timeoutForControlPlane: 4m0s
+controllerManager:
+  - bind-address: ::
+    master: 2001:db8:bad:a55::2
+    cluster-cidr: fd04::/112
+dns:
+  type: CoreDNS
+imageRepository: k8s.gcr.io
+scheduler: 
+  - bind-address: '::'
+    master: 2001:db8:bad:a55::2
+

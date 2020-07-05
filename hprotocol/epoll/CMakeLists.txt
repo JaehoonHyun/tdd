@@ -4,11 +4,11 @@ cmake_minimum_required (VERSION 3.2)
 ######################
 # PROJECT PROPERTIES #
 ######################
-message("== template_project ==")
-project (template_project)
+message("== hprotocol ==")
+project (hprotocol)
 SET ( OUTPUT_ELF ${PROJECT_NAME} )
 SET (WORKSPACE ".")
-SET (PROJECT_NAME "template_project")
+SET (PROJECT_NAME "hprotocol")
 SET (CMAKE_BUILD_TYPE Debug)
 # SET ( CMAKE_BUILD_TYPE Release)
 

@@ -1,0 +1,3 @@
+/home/test1/workspace/distruptor/build/CMakeFiles/edit_cache.dir
+/home/test1/workspace/distruptor/build/CMakeFiles/rebuild_cache.dir
+/home/test1/workspace/distruptor/build/CMakeFiles/disruptor.dir

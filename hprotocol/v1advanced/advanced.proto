@@ -1,0 +1,32 @@
+/*
+C#     : protoc -I ./ --csharp_out=./csharp ./play.proto
+C++    : protoc -I ./ --cpp_out=./cclang    ./play.proto
+C      : protoc -I ./ --c_out=./clang       ./play.proto
+golang : protoc -I ./ --go_out=./golang     ./play.proto
+*/
+
+
+syntax = "proto3";
+package v1advanced;
+
+import "google/protobuf/timestamp.proto";
+
+enum BuzzType {
+    CREATE = 0;
+    READ = 1;
+    UPDATE = 2;
+    DELETE = 3;
+    PATCH = 4;
+}
+
+message Buzz {
+
+    BuzzType type = 1;
+    string rest = 2;
+
+    //headers
+    google.protobuf.Timestamp when = 3;
+    
+
+}
+

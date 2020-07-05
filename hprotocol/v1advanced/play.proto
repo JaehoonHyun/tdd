@@ -1,0 +1,16 @@
+
+syntax = "proto3";
+package v1advanced;
+
+import "advanced.proto";
+
+//description of 5W1H principal
+message BuzzPlay {
+    v1advanced.Buzz buzz = 1; 
+
+    bytes where = 2; //(12.34, 2452.2, 1235.22)
+    bytes who = 3;  //user
+    bytes how = 4;  //skill, weapon
+    bytes what = 5; // monster, user, none
+    bytes why = 6; // hunting, quest, none
+}

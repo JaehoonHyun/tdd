@@ -35,7 +35,6 @@ include_directories (${WORKSPACE}/gtest/include)
 # ADD SRC FILES #
 #################
 file(GLOB_RECURSE COMMON_SRC_FILES ${WORKSPACE}/common/src/*.cpp)
-file(GLOB_RECURSE MY_SRC_FILES src/*.cpp)
 file(GLOB_RECURSE MY_SRC_FILES src/*.cc)
 file(GLOB_RECURSE G_TEST_FILES gtest/src/gtest-all.cc)
 SET (SRC_FILES ${COMMON_SRC_FILES} 
